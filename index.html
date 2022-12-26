@@ -1,23 +1,158 @@
-<html>
+<html  lang="en-US">
 <head>
     <title>Nesono Mail Server Help</title>
     <style>
         body {
             width: 40em;
             margin: 0 auto;
-            font-family: Tahoma, Verdana, Arial, sans-serif;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        pre {
+            font-family: "JetBrains Mono", monospace;
+        }
+        th, td {
+            border-bottom: 1px solid #ddd;
+            padding: 5px;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        thead {
+            background-color: slategray;
+            border-collapse: collapse;
+            border: none;
+            color: white;
         }
     </style>
 </head>
 <body>
 <h1>Nesono Mail Server Help</h1>
 <p>This is the official help for the Nesono Mail Server. We provide basic documentation around mail client
-    configuration. The server provides IMAPS, SMTPS, and Sieve access.</p>
+    configuration. The server provides IMAPS, SMTPS, and Sieve (server-based mail filtering) access.</p>
+
+<h2>Links</h2>
+
+<table>
+    <tbody>
+    <tr>
+        <td><a href="https://roundcube2.nesono.com" target="_blank">Roundcube</a></td>
+        <td>Nesono webmail service - use this to edit the server side mail filter</td>
+    </tr>
+    </tbody>
+</table>
+
 <h2>IMAPS Mail Client Configuration</h2>
-<p>tbd</p>
+<table>
+    <thead>
+        <tr>
+            <th>Setting</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>IMAP server</td>
+            <td><pre>mail2.nesono.com</pre></td>
+        </tr>
+        <tr>
+            <td>Port</td>
+            <td><pre>993</pre></td>
+        </tr>
+        <tr>
+            <td>STARTTLS</td>
+            <td><pre>true</pre></td>
+        </tr>
+        <tr>
+            <td>Username</td>
+            <td><pre>"full-email-address"</pre></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><pre>"password"</pre></td>
+        </tr>
+    </tbody>
+</table>
 <h2>SMTPS Mail Client Configuration</h2>
-<p>tbd</p>
+<table>
+    <thead>
+        <tr>
+            <th>Setting</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>SMTP server</td>
+            <td>
+                <pre>mail2.nesono.com</pre>
+            </td>
+        </tr>
+        <tr>
+            <td>Port</td>
+            <td>
+                <pre>25</pre>
+            </td>
+        </tr>
+        <tr>
+            <td>STARTTLS</td>
+            <td>
+                <pre>true</pre>
+            </td>
+        </tr>
+        <tr>
+            <td>Username</td>
+            <td>
+                <pre>"full-email-address"</pre>
+            </td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td>
+                <pre>"password"</pre>
+            </td>
+        </tr>
+    </tbody>
+</table>
 <h2>Sieve Mail Client Configuration</h2>
-<p>tbd</p>
+<table>
+    <thead>
+        <tr>
+            <th>Setting</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>SMTP server</td>
+            <td>
+                <pre>mail2.nesono.com</pre>
+            </td>
+        </tr>
+        <tr>
+            <td>Port</td>
+            <td>
+                <pre>4910</pre>
+            </td>
+        </tr>
+        <tr>
+            <td>STARTTLS</td>
+            <td>
+                <pre>true</pre>
+            </td>
+        </tr>
+        <tr>
+            <td>Username</td>
+            <td>
+                <pre>"full-email-address"</pre>
+            </td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td>
+                <pre>"password"</pre>
+            </td>
+        </tr>
+    </tbody>
+</table>
 </body>
 </html>
