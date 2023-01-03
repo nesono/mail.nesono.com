@@ -18,10 +18,13 @@
             border-collapse: collapse;
         }
         thead {
-            background-color: slategray;
             border-collapse: collapse;
             border: none;
-            color: white;
+            border-bottom: 2px solid black;
+        }
+        .center {
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 </head>
@@ -29,10 +32,14 @@
 <h1>Nesono Mail Server Help</h1>
 <p>This is the official help for the Nesono Mail Server. We provide basic documentation around mail client
     configuration. The server provides IMAPS, SMTPS, and Sieve (server-based mail filtering) access.</p>
-
-<h2>Links</h2>
-
+<p>Some useful links for nesono.com users:</p>
 <table>
+    <thead>
+    <tr>
+        <th>Link</th>
+        <th>Description</th>
+    </tr>
+    </thead>
     <tbody>
     <tr>
         <td><a href="https://roundcube2.nesono.com" target="_blank">Roundcube</a></td>
@@ -50,7 +57,7 @@
     If you are uncertain in regard to what your account email is, please reach out
     to your administrator.</p>
 
-<table>
+<table class="center">
     <thead>
     <tr>
         <th>Setting</th>
@@ -74,7 +81,7 @@
 </table>
 
 <h2>IMAPS Mail Client Configuration</h2>
-<table>
+<table class="center">
     <thead>
         <tr>
             <th>Setting</th>
@@ -93,7 +100,7 @@
     </tbody>
 </table>
 <h2>SMTPS Mail Client Configuration</h2>
-<table>
+<table class="center">
     <thead>
         <tr>
             <th>Setting</th>
@@ -116,7 +123,7 @@
     </tbody>
 </table>
 <h2>Sieve Mail Client Configuration</h2>
-<table>
+<table class="center">
     <thead>
         <tr>
             <th>Setting</th>
@@ -140,7 +147,7 @@
 </table>
 <h2>Known Limitations</h2>
 <p>This is the list of known limitations including potential mitigations</p>
-<table>
+<table class="center">
     <thead>
     <tr>
         <th>Service</th>
